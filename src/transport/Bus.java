@@ -27,6 +27,6 @@ public class Bus extends Transport implements Competing{
 
     @Override
     public double maxSpeed() {
-        return 75;
+        return 74;
     }
 }

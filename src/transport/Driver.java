@@ -48,11 +48,9 @@ public abstract class  Driver <D extends Transport> {
 
     public String driverCar(Car car) {
         return "Водитель не может водить этот автомобиль";
-
     }
     public String driverCar(Bus bus) {
         return "Водитель не может водить этот автомобиль";
-
     }
 
 }

@@ -17,7 +17,6 @@ public class DriverD extends Driver<Bus>{
 
     @Override
     public void relifTransport() {
-
     }
 
     public String driverBus(Bus bus) {

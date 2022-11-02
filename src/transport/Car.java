@@ -10,7 +10,6 @@ public class Car extends Transport implements Competing{
         System.out.println("Я "+toString());
         System.out.println("ВСтавляю ключ, завожу двигатель, нажимаю педаль газ");
 
-
     }
 
     @Override

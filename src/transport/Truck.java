@@ -17,7 +17,7 @@ public class Truck extends Transport implements Competing{
 
     @Override
     public String getPitStop() {
-        return null;
+        return "ПИТ стопппп";
     }
 
     @Override

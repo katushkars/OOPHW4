@@ -37,7 +37,6 @@ public abstract class Transport {
     public void setVolume(double volume) {
         this.volume = volume;
     }
-
     public abstract void start();
     public abstract void finish();
 
