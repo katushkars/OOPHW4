@@ -1,10 +1,32 @@
 package transport;
 
 public class Truck extends Transport implements Competing{
-    public Truck(String carBrand, String model, double volume) {
-        super(carBrand, model, volume);
-    }
+    public Carrying carrying;
+    public enum Carrying {
+        n1 ("с полной массой до 3,5 тонн"),
+        n2("с полной массой от 3,5 тонн до 12 тонн"),
+        n3("с полной массой свыше 12 тонн");
 
+        private String carryingTruck;
+
+        public String getCarryingTruck() {
+            return carryingTruck;
+        }
+
+        public void setCarryingTruck(String carryingTruck) {
+            this.carryingTruck = carryingTruck;
+        }
+
+        Carrying(String carryingTruck) {
+            this.carryingTruck = carryingTruck;
+        }
+
+
+    }
+    public Truck(String carBrand, String model, double volume, Carrying carrying) {
+        super(carBrand, model, volume);
+        this.carrying=carrying;
+    }
     @Override
     public void start() {
 
@@ -16,8 +38,13 @@ public class Truck extends Transport implements Competing{
     }
 
     @Override
+    public boolean service() {
+        return false;
+    }
+
+    @Override
     public String getPitStop() {
-        return null;
+        return "ПИТ стопппп";
     }
 
     @Override
@@ -28,5 +55,10 @@ public class Truck extends Transport implements Competing{
     @Override
     public double maxSpeed() {
         return 0;
+    }
+    public String detemineCarryingTruck(){
+        String typeTruck= carrying.getCarryingTruck();
+        return "Грузоподъемность грузовика"
+                +typeTruck;
     }
 }

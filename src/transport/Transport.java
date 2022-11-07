@@ -37,7 +37,6 @@ public abstract class Transport {
     public void setVolume(double volume) {
         this.volume = volume;
     }
-
     public abstract void start();
     public abstract void finish();
 
@@ -52,5 +51,7 @@ public abstract class Transport {
         if(value==null||value.isBlank()||value.isEmpty()){
           return value=defoult;} else{return value=value;
         }
+
     }
+    public abstract boolean service();
 }

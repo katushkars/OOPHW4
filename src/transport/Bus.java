@@ -1,8 +1,15 @@
 package transport;
 
 public class Bus extends Transport implements Competing{
+    public enum Capacity {xs,x,m,l,xl}
     public Bus(String carBrand, String model, double volume) {
         super(carBrand, model, volume);
+    }
+
+    @Override
+    public boolean service() {
+        System.out.println("Автобус диагностику не проходит");
+        return true;
     }
 
     @Override
@@ -27,6 +34,6 @@ public class Bus extends Transport implements Competing{
 
     @Override
     public double maxSpeed() {
-        return 75;
+        return 74;
     }
 }

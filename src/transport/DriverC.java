@@ -7,7 +7,6 @@ public class DriverC extends Driver<Truck>{
 
     @Override
     public void startDrive() {
-
     }
 
     @Override
