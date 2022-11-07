@@ -26,6 +26,11 @@ public class Main {
       System.out.println(vova.driverBus(bus1));
       System.out.println(car3.determineBodyType());
       System.out.println(truck2.detemineCarryingTruck());
+      System.out.println(car1.service());
+     bus1.service();
 
     }
+
+
+
 }

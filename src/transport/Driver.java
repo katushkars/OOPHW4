@@ -27,6 +27,13 @@ public abstract class  Driver <D extends Transport> {
         this.categoryName = categoryName;
     }
 
+    public void setCategory (String categoryName){
+        if( categoryName==null){
+            throw new IllegalArgumentException("Необходимо указать тип прав!");
+        }
+        this.categoryName=categoryName;
+    }
+
     public int getYearDriving() {
         return yearDriving;
     }

@@ -38,6 +38,11 @@ public class Truck extends Transport implements Competing{
     }
 
     @Override
+    public boolean service() {
+        return false;
+    }
+
+    @Override
     public String getPitStop() {
         return "ПИТ стопппп";
     }

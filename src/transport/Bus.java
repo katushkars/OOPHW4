@@ -7,6 +7,12 @@ public class Bus extends Transport implements Competing{
     }
 
     @Override
+    public boolean service() {
+        System.out.println("Автобус диагностику не проходит");
+        return true;
+    }
+
+    @Override
     public void start() {
 
     }

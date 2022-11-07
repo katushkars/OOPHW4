@@ -66,5 +66,8 @@ public class Car extends Transport implements Competing{
         if (carBody==null){
             return  carBody="Тип автомобиля не указан";}else{ return carBody=bodyType.getTypeCar();}
         }
+        public boolean service (){
+        return false;
+        }
     }
 
